@@ -33,7 +33,7 @@ ${input:topic:Enter project name or topic}
 - **If found**: Read the user's customized template (user override takes precedence)
 - **If not found**: Read `.arckit/templates/project-plan-template.md` (default)
 
-> **Tip**: Users can customize templates with `/arckit:customize plan`
+> **Tip**: Users can customize templates with `/arckit-customize plan`
 
 ## Step 1: Understand the Context
 
@@ -334,12 +334,12 @@ For each phase (Discovery, Alpha, Beta, Live), create a table with:
 
 | Week | Activity | ArcKit Command | Deliverable |
 |------|----------|----------------|-------------|
-| 1-2 | Stakeholder Analysis | `/arckit:stakeholders` | Stakeholder map, drivers, goals |
+| 1-2 | Stakeholder Analysis | `/arckit-stakeholders` | Stakeholder map, drivers, goals |
 | 3-4 | User Research | Manual | User needs, pain points |
-| 5-6 | Business Requirements | `/arckit:requirements` | BRs with acceptance criteria |
-| 7 | Architecture Principles | `/arckit:principles` | 10-15 principles |
-| 8 | Initial Business Case | `/arckit:business-case` | Cost/benefit analysis |
-| 8 | Initial Risk Register | `/arckit:risk` | Top 10 risks |
+| 5-6 | Business Requirements | `/arckit-requirements` | BRs with acceptance criteria |
+| 7 | Architecture Principles | `/arckit-principles` | 10-15 principles |
+| 8 | Initial Business Case | `/arckit-business-case` | Cost/benefit analysis |
+| 8 | Initial Risk Register | `/arckit-risk` | Top 10 risks |
 
 ### Gate: Discovery Assessment (Week 8)
 
@@ -370,30 +370,30 @@ Create a section mapping ALL relevant ArcKit commands to the plan:
 ## ArcKit Commands in Project Flow
 
 ### Discovery Phase
-- Week 1-2: `/arckit:stakeholders` - Stakeholder analysis
-- Week 5-6: `/arckit:requirements` - Business Requirements (BRs)
-- Week 7: `/arckit:principles` - Architecture principles
-- Week 8: `/arckit:business-case` - Initial business case
-- Week 8: `/arckit:risk` - Initial risk register
+- Week 1-2: `/arckit-stakeholders` - Stakeholder analysis
+- Week 5-6: `/arckit-requirements` - Business Requirements (BRs)
+- Week 7: `/arckit-principles` - Architecture principles
+- Week 8: `/arckit-business-case` - Initial business case
+- Week 8: `/arckit-risk` - Initial risk register
 
 ### Alpha Phase
-- Week 9-11: `/arckit:requirements` - Detailed requirements (FR, NFR, INT, DR)
-- Week 12-15: `/arckit:diagram` - Architecture diagrams (C4)
-- Week 11-12: `/arckit:sow` - Generate SOW/RFP (if vendor needed)
-- Week 13-15: `/arckit:evaluate` - Vendor evaluation (if applicable)
-- Week 18: `/arckit:hld-review` - HLD approval gate
-- Week 19: `/arckit:business-case` - Updated business case
+- Week 9-11: `/arckit-requirements` - Detailed requirements (FR, NFR, INT, DR)
+- Week 12-15: `/arckit-diagram` - Architecture diagrams (C4)
+- Week 11-12: `/arckit-sow` - Generate SOW/RFP (if vendor needed)
+- Week 13-15: `/arckit-evaluate` - Vendor evaluation (if applicable)
+- Week 18: `/arckit-hld-review` - HLD approval gate
+- Week 19: `/arckit-business-case` - Updated business case
 
 ### Beta Phase
-- Week 25: `/arckit:dld-review` - DLD approval gate
-- Week 29-31: `/arckit:analyze` - Quality analysis
-- Week 32-33: `/arckit:traceability` - Verify design → code → tests
-- If AI: `/arckit:ai-playbook`, `/arckit:atrs` - AI compliance
+- Week 25: `/arckit-dld-review` - DLD approval gate
+- Week 29-31: `/arckit-analyze` - Quality analysis
+- Week 32-33: `/arckit-traceability` - Verify design → code → tests
+- If AI: `/arckit-ai-playbook`, `/arckit-atrs` - AI compliance
 
 ### Live Phase
-- Quarterly: `/arckit:analyze` - Periodic quality reviews
-- Quarterly: `/arckit:risk` - Update operational risks
-- Annually: `/arckit:business-case` - Track benefits realization
+- Quarterly: `/arckit-analyze` - Periodic quality reviews
+- Quarterly: `/arckit-risk` - Update operational risks
+- Annually: `/arckit-business-case` - Track benefits realization
 ```
 
 ---
@@ -421,7 +421,7 @@ Before completing the document, populate ALL document control fields in the head
 
 - `[PROJECT_NAME]` → Full project name from project metadata or user input
 - `[OWNER_NAME_AND_ROLE]` → Document owner (prompt user if not in metadata)
-- `[CLASSIFICATION]` → Default to `${user_config.default_classification}`; if unavailable, use "OFFICIAL" for UK Gov, "PUBLIC" otherwise (or prompt user)
+- `[CLASSIFICATION]` → Default to `${default_classification}`; if unavailable, use "OFFICIAL" for UK Gov, "PUBLIC" otherwise (or prompt user)
 
 *Calculated fields*:
 
@@ -436,7 +436,7 @@ Before completing the document, populate ALL document control fields in the head
 **Populate Revision History**:
 
 ```markdown
-| 1.0 | {DATE} | ArcKit AI | Initial creation from `/arckit:plan` command | [PENDING] | [PENDING] |
+| 1.0 | {DATE} | ArcKit AI | Initial creation from `/arckit-plan` command | [PENDING] | [PENDING] |
 ```
 
 **Populate Generation Metadata Footer**:
@@ -444,7 +444,7 @@ Before completing the document, populate ALL document control fields in the head
 The footer should be populated with:
 
 ```markdown
-**Generated by**: ArcKit `/arckit:plan` command
+**Generated by**: ArcKit `/arckit-plan` command
 **Generated on**: {DATE} {TIME} GMT
 **ArcKit Version**: {ARCKIT_VERSION}
 **Project**: {PROJECT_NAME} (Project {PROJECT_ID})
@@ -509,7 +509,7 @@ After writing the plan, provide a summary:
 **Next Steps**:
 1. Review plan with SRO and stakeholders
 2. Confirm budget and resources
-3. Start Discovery: Run `/arckit:stakeholders`
+3. Start Discovery: Run `/arckit-stakeholders`
 4. Update plan as project progresses
 ```
 

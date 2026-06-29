@@ -38,8 +38,8 @@ node .arckit/scripts/import-okf.mjs ${input:topic:Enter project name or topic}
 ## Example Usage
 
 ```text
-/arckit:import-okf --bundle okf/all --project 001
-/arckit:import-okf --bundle /tmp/vendor-okf --project 001 --dry-run
+/arckit-import-okf --bundle okf/all --project 001
+/arckit-import-okf --bundle /tmp/vendor-okf --project 001 --dry-run
 ```
 
 ## Key References

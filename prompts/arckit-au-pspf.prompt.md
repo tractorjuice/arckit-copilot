@@ -98,7 +98,7 @@ PSPF is structured around **four security outcomes** with **16 core requirements
 
    - **Compliance Summary** — 16-row table covering all four outcomes; overall PSPF maturity statement.
 
-   - **ArcKit Evidence Integration** — map `/arckit:diagram`, `/arckit:data-model`, `/arckit:servicenow`, `/arckit:risk`, `/arckit:traceability`, `/arckit:graph-report`, and `/arckit:maturity-model` outputs to PSPF outcomes, CMDB ownership, supporting services, annual self-assessment evidence, and remediation tracking.
+   - **ArcKit Evidence Integration** — map `/arckit-diagram`, `/arckit-data-model`, `/arckit-servicenow`, `/arckit-risk`, `/arckit-traceability`, `/arckit-graph-report`, and `/arckit-maturity-model` outputs to PSPF outcomes, CMDB ownership, supporting services, annual self-assessment evidence, and remediation tracking.
 
    - **Recommendations** — prioritised remediations by Quick Wins / Short-Term / Medium-Term, each tagged to specific Core Requirement.
 

@@ -36,8 +36,8 @@ node .arckit/scripts/export-okf.mjs ${input:topic:Enter project name or topic}
 ## Example Usage
 
 ```text
-/arckit:export-okf --project 001 --out okf/001
-/arckit:export-okf --all --out okf/all
+/arckit-export-okf --project 001 --out okf/001
+/arckit-export-okf --all --out okf/all
 ```
 
 ## Key References

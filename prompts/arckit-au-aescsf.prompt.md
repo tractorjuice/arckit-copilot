@@ -16,7 +16,7 @@ ${input:topic:Enter project name or topic}
 
 ## Context
 
-The Australian Energy Sector Cyber Security Framework is an energy-sector cyber maturity framework coordinated through AEMO and industry partners. Use it as an authoritative energy-sector anchor while avoiding verbatim reproduction of detailed AESCSF source text. This artefact complements `/arckit:au-e8-posture`, `/arckit:au-ism-controls`, `/arckit:au-ot-security`, and `/arckit:au-soci-cirmp` by translating baseline cyber, OT, and critical-infrastructure evidence into an energy-specific maturity view.
+The Australian Energy Sector Cyber Security Framework is an energy-sector cyber maturity framework coordinated through AEMO and industry partners. Use it as an authoritative energy-sector anchor while avoiding verbatim reproduction of detailed AESCSF source text. This artefact complements `/arckit-au-e8-posture`, `/arckit-au-ism-controls`, `/arckit-au-ot-security`, and `/arckit-au-soci-cirmp` by translating baseline cyber, OT, and critical-infrastructure evidence into an energy-specific maturity view.
 
 **Authoritative anchors**:
 
@@ -68,13 +68,13 @@ The Australian Energy Sector Cyber Security Framework is an energy-sector cyber 
 
    - **Energy Data Model Dependencies** - identify dependencies across network assets, DER, meters, NMI / customer records, market settlements, telemetry, outage, switching, and operational data.
 
-   - **Asset, Interface, and Evidence Inventory** - identify source-of-truth registers for OT assets, IT systems, DERMS / DOE platforms, market interfaces, APIs, telemetry links, metering assets, vendor remote-access paths, data catalogues, control evidence, owners, criticality, and inventory gaps. Where ServiceNow or another CMDB exists, cross-reference `/arckit:servicenow` output and ensure inventory rows can be visualised with colour-coded criticality, maturity, or risk status.
+   - **Asset, Interface, and Evidence Inventory** - identify source-of-truth registers for OT assets, IT systems, DERMS / DOE platforms, market interfaces, APIs, telemetry links, metering assets, vendor remote-access paths, data catalogues, control evidence, owners, criticality, and inventory gaps. Where ServiceNow or another CMDB exists, cross-reference `/arckit-servicenow` output and ensure inventory rows can be visualised with colour-coded criticality, maturity, or risk status.
 
-   - **Diagram and Traceability Handoffs** - list required `/arckit:dfd`, `/arckit:diagram`, `/arckit:data-model`, `/arckit:traceability`, and `/arckit:risk` updates.
+   - **Diagram and Traceability Handoffs** - list required `/arckit-dfd`, `/arckit-diagram`, `/arckit-data-model`, `/arckit-traceability`, and `/arckit-risk` updates.
 
    - **AESCSF Anti-Pattern Register** - call out flat OT networks, undocumented market interfaces, unmanaged vendor remote access, stale DER integration assumptions, missing data ownership, and unsupported control-room dependencies.
 
-   - **Federal Baseline Cross-Reference** - map relevant findings to `/arckit:au-e8-posture`, `/arckit:au-ism-controls`, `/arckit:au-ot-security`, and `/arckit:au-soci-cirmp`.
+   - **Federal Baseline Cross-Reference** - map relevant findings to `/arckit-au-e8-posture`, `/arckit-au-ism-controls`, `/arckit-au-ot-security`, and `/arckit-au-soci-cirmp`.
 
    - **Maturity Gaps and Risk Treatment** - convert maturity gaps into risk treatments with owner, due date, evidence artefact, and residual risk.
 
@@ -91,8 +91,8 @@ The Australian Energy Sector Cyber Security Framework is an energy-sector cyber 
 - This command is community-contributed guidance, not legal, regulatory, or certification advice.
 - AEMO AESCSF resources may be intermittently unavailable. Keep AEMO as the authoritative anchor, record access date and availability status, and require re-verification before external reliance.
 - Energy projects often combine enterprise IT, OT, market, DER, metering, settlement, and customer data. Do not assess maturity without architecture evidence for those dependencies.
-- Where the project includes critical infrastructure, cross-reference `/arckit:au-soci-cirmp`; where it includes connected OT, cross-reference `/arckit:au-ot-security`.
-- Inventory-heavy findings should reuse existing ArcKit artefacts: `/arckit:data-model` for data catalogues, `/arckit:servicenow` for CMDB/service inventory, `/arckit:dfd` and `/arckit:diagram` for colour-coded visualisation, `/arckit:risk` for heat/scoring, `/arckit:maturity-model` for maturity criteria, and `/arckit:graph-report` for coverage gaps.
+- Where the project includes critical infrastructure, cross-reference `/arckit-au-soci-cirmp`; where it includes connected OT, cross-reference `/arckit-au-ot-security`.
+- Inventory-heavy findings should reuse existing ArcKit artefacts: `/arckit-data-model` for data catalogues, `/arckit-servicenow` for CMDB/service inventory, `/arckit-dfd` and `/arckit-diagram` for colour-coded visualisation, `/arckit-risk` for heat/scoring, `/arckit-maturity-model` for maturity criteria, and `/arckit-graph-report` for coverage gaps.
 
 ## Suggested Next Steps
 

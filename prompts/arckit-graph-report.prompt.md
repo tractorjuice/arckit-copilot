@@ -45,7 +45,7 @@ The hook block at the top of your context contains:
 - A per-project compliance readiness breakdown
 - A density interpretation legend
 
-If the hook block is missing (unlikely — it always fires for `/arckit:graph-report`), inform the user and stop.
+If the hook block is missing (unlikely — it always fires for `/arckit-graph-report`), inform the user and stop.
 
 ### Step 2: Render the dashboard
 
@@ -72,7 +72,7 @@ DENSITY INTERPRETATION
    - Projects missing whole categories: <list, if any>
 
 ▶ Recommended actions
-   - <bullet list — for each project with <50% compliance readiness, suggest the top missing /arckit:* command>
+   - <bullet list — for each project with <50% compliance readiness, suggest the top missing /arckit-* command>
 ```
 
 ### Step 3: Stop
@@ -90,6 +90,6 @@ No file is written. The output is the deliverable.
 
 ## Related commands
 
-- `/arckit:navigator <project>` — single-project "what's next" GPS, complementary to graph-report.
-- `/arckit:analyze <project>` — deep governance analysis for one project (sections, requirements, principles, risks).
-- `/arckit:health` — point-in-time health rules across all projects.
+- `/arckit-navigator <project>` — single-project "what's next" GPS, complementary to graph-report.
+- `/arckit-analyze <project>` — deep governance analysis for one project (sections, requirements, principles, risks).
+- `/arckit-health` — point-in-time health rules across all projects.

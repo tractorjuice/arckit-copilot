@@ -40,52 +40,52 @@ Display as a table:
 
 | Template | Command | Description |
 |----------|---------|-------------|
-| `adr` | `/arckit:adr` | Architecture Decision Records (MADR v4.0) |
-| `analysis-report` | `/arckit:analyze` | Governance quality analysis report |
-| `architecture-diagram` | `/arckit:diagram` | Mermaid architecture diagrams |
-| `architecture-principles` | `/arckit:principles` | Enterprise architecture principles |
-| `architecture-strategy` | `/arckit:strategy` | Executive-level strategy document |
-| `aws-research` | `/arckit:aws-research` | AWS service research findings |
-| `azure-research` | `/arckit:azure-research` | Azure service research findings |
-| `backlog` | `/arckit:backlog` | Product backlog with user stories |
-| `data-mesh-contract` | `/arckit:data-mesh-contract` | Data product contracts |
-| `data-model` | `/arckit:data-model` | Data model with GDPR compliance |
-| `datascout` | `/arckit:datascout` | External data source discovery |
-| `devops` | `/arckit:devops` | DevOps strategy and CI/CD |
-| `dld-review` | `/arckit:dld-review` | Detailed design review |
-| `dos-requirements` | `/arckit:dos` | Digital Outcomes & Specialists |
-| `dpia` | `/arckit:dpia` | Data Protection Impact Assessment |
-| `evaluation-criteria` | `/arckit:evaluate` | Vendor evaluation framework |
-| `finops` | `/arckit:finops` | FinOps cloud cost management |
-| `gcloud-clarify` | `/arckit:gcloud-clarify` | G-Cloud clarification questions |
-| `gcloud-requirements` | `/arckit:gcloud-search` | G-Cloud service requirements |
-| `hld-review` | `/arckit:hld-review` | High-level design review |
-| `jsp-936` | `/arckit:jsp-936` | MOD AI assurance (JSP 936) |
-| `mlops` | `/arckit:mlops` | MLOps strategy |
-| `mod-secure-by-design` | `/arckit:mod-secure` | MOD Secure by Design |
-| `operationalize` | `/arckit:operationalize` | Operational readiness pack |
-| `platform-design` | `/arckit:platform-design` | Platform Design Toolkit |
-| `principles-compliance-assessment` | `/arckit:principles-compliance` | Principles compliance scorecard |
-| `project-plan` | `/arckit:plan` | Project plan with timeline |
-| `requirements` | `/arckit:requirements` | Business & technical requirements |
-| `research-findings` | `/arckit:research` | Technology research findings |
-| `risk-register` | `/arckit:risk` | Risk register (Orange Book) |
-| `roadmap` | `/arckit:roadmap` | Architecture roadmap |
-| `service-assessment-prep` | `/arckit:service-assessment` | GDS Service Standard prep |
-| `servicenow-design` | `/arckit:servicenow` | ServiceNow service design |
-| `sobc` | `/arckit:sobc` | Strategic Outline Business Case |
-| `sow` | `/arckit:sow` | Statement of Work / RFP |
-| `stakeholder-drivers` | `/arckit:stakeholders` | Stakeholder analysis |
-| `story` | `/arckit:story` | Project story with timeline |
-| `tcop-review` | `/arckit:tcop` | Technology Code of Practice |
-| `traceability-matrix` | `/arckit:traceability` | Requirements traceability |
-| `uk-gov-ai-playbook` | `/arckit:ai-playbook` | AI Playbook compliance |
-| `uk-gov-atrs` | `/arckit:atrs` | Algorithmic Transparency Record |
-| `uk-gov-tcop` | `/arckit:tcop` | TCoP review template |
-| `ukgov-secure-by-design` | `/arckit:secure` | UK Gov Secure by Design |
-| `vendor-scoring` | `/arckit:evaluate` | Vendor scoring matrix |
-| `wardley-map` | `/arckit:wardley` | Wardley Map documentation |
-| `pages` | `/arckit:pages` | GitHub Pages site (HTML/CSS/JS) |
+| `adr` | `/arckit-adr` | Architecture Decision Records (MADR v4.0) |
+| `analysis-report` | `/arckit-analyze` | Governance quality analysis report |
+| `architecture-diagram` | `/arckit-diagram` | Mermaid architecture diagrams |
+| `architecture-principles` | `/arckit-principles` | Enterprise architecture principles |
+| `architecture-strategy` | `/arckit-strategy` | Executive-level strategy document |
+| `aws-research` | `/arckit-aws-research` | AWS service research findings |
+| `azure-research` | `/arckit-azure-research` | Azure service research findings |
+| `backlog` | `/arckit-backlog` | Product backlog with user stories |
+| `data-mesh-contract` | `/arckit-data-mesh-contract` | Data product contracts |
+| `data-model` | `/arckit-data-model` | Data model with GDPR compliance |
+| `datascout` | `/arckit-datascout` | External data source discovery |
+| `devops` | `/arckit-devops` | DevOps strategy and CI/CD |
+| `dld-review` | `/arckit-dld-review` | Detailed design review |
+| `dos-requirements` | `/arckit-dos` | Digital Outcomes & Specialists |
+| `dpia` | `/arckit-dpia` | Data Protection Impact Assessment |
+| `evaluation-criteria` | `/arckit-evaluate` | Vendor evaluation framework |
+| `finops` | `/arckit-finops` | FinOps cloud cost management |
+| `gcloud-clarify` | `/arckit-gcloud-clarify` | G-Cloud clarification questions |
+| `gcloud-requirements` | `/arckit-gcloud-search` | G-Cloud service requirements |
+| `hld-review` | `/arckit-hld-review` | High-level design review |
+| `jsp-936` | `/arckit-jsp-936` | MOD AI assurance (JSP 936) |
+| `mlops` | `/arckit-mlops` | MLOps strategy |
+| `mod-secure-by-design` | `/arckit-mod-secure` | MOD Secure by Design |
+| `operationalize` | `/arckit-operationalize` | Operational readiness pack |
+| `platform-design` | `/arckit-platform-design` | Platform Design Toolkit |
+| `principles-compliance-assessment` | `/arckit-principles-compliance` | Principles compliance scorecard |
+| `project-plan` | `/arckit-plan` | Project plan with timeline |
+| `requirements` | `/arckit-requirements` | Business & technical requirements |
+| `research-findings` | `/arckit-research` | Technology research findings |
+| `risk-register` | `/arckit-risk` | Risk register (Orange Book) |
+| `roadmap` | `/arckit-roadmap` | Architecture roadmap |
+| `service-assessment-prep` | `/arckit-service-assessment` | GDS Service Standard prep |
+| `servicenow-design` | `/arckit-servicenow` | ServiceNow service design |
+| `sobc` | `/arckit-sobc` | Strategic Outline Business Case |
+| `sow` | `/arckit-sow` | Statement of Work / RFP |
+| `stakeholder-drivers` | `/arckit-stakeholders` | Stakeholder analysis |
+| `story` | `/arckit-story` | Project story with timeline |
+| `tcop-review` | `/arckit-tcop` | Technology Code of Practice |
+| `traceability-matrix` | `/arckit-traceability` | Requirements traceability |
+| `uk-gov-ai-playbook` | `/arckit-ai-playbook` | AI Playbook compliance |
+| `uk-gov-atrs` | `/arckit-atrs` | Algorithmic Transparency Record |
+| `uk-gov-tcop` | `/arckit-tcop` | TCoP review template |
+| `ukgov-secure-by-design` | `/arckit-secure` | UK Gov Secure by Design |
+| `vendor-scoring` | `/arckit-evaluate` | Vendor scoring matrix |
+| `wardley-map` | `/arckit-wardley` | Wardley Map documentation |
+| `pages` | `/arckit-pages` | GitHub Pages site (HTML/CSS/JS) |
 
 ### 3. **Copy Template(s)**
 
@@ -97,7 +97,7 @@ Display as a table:
    - Find: ``> **Template Origin**: Official | **ArcKit Version**: [VERSION] | **Command**: `/arckit.{command}` ``
    - Replace with: ``> **Template Origin**: Custom | **Based On**: `/arckit.{command}` | **ArcKit Version**: [VERSION]``
 4. Use the Write tool to save it to `.arckit/templates-custom/{name}-template.{ext}` (the directory will be created automatically)
-5. If the source template does not exist, inform the user and suggest running `/arckit:customize list`
+5. If the source template does not exist, inform the user and suggest running `/arckit-customize list`
 
 **Copy all templates:**
 
@@ -124,7 +124,7 @@ Your template has been copied to `.arckit/templates-custom/`. You can now custom
 
 ### How It Works
 
-When you run an ArcKit command (e.g., `/arckit:requirements`):
+When you run an ArcKit command (e.g., `/arckit-requirements`):
 
 1. Command checks: Does `.arckit/templates-custom/requirements-template.md` exist?
 2. **If YES** → Uses YOUR customized template
@@ -192,7 +192,7 @@ After completing the request, show:
 
 **Next Steps**:
 1. Edit the template(s) in `.arckit/templates-custom/`
-2. Run the corresponding `/arckit:*` command
+2. Run the corresponding `/arckit-*` command
 3. Your customized template will be used automatically
 
 **Tip**: Read both the default and your custom template to compare differences.
@@ -203,29 +203,29 @@ After completing the request, show:
 **List all templates:**
 
 ```text
-/arckit:customize list
+/arckit-customize list
 ```
 
 **Copy requirements template:**
 
 ```text
-/arckit:customize requirements
+/arckit-customize requirements
 ```
 
 **Copy multiple templates:**
 
 ```text
-/arckit:customize requirements risk adr
+/arckit-customize requirements risk adr
 ```
 
 **Copy all templates:**
 
 ```text
-/arckit:customize all
+/arckit-customize all
 ```
 
 **Get info about a template:**
 
 ```text
-/arckit:customize info requirements
+/arckit-customize info requirements
 ```

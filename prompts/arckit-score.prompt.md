@@ -25,7 +25,7 @@ Parse the first word of `${input:topic:Enter project name or topic}` to determin
 Score a specific vendor against the project's evaluation criteria.
 
 1. **Read the project's EVAL artifact** (evaluation criteria):
-   - If no EVAL exists, tell the user to run `/arckit:evaluate` first
+   - If no EVAL exists, tell the user to run `/arckit-evaluate` first
    - Extract all evaluation criteria with their weights and categories
 
 2. **Read vendor proposal** from `projects/{id}/vendors/{vendor-name}/`:
@@ -37,7 +37,7 @@ Score a specific vendor against the project's evaluation criteria.
    `projects/{id}/vendors/{slug}-profile.md` (or a `CMPT` Competitor Landscape artefact in `research/`).
    If it records UK government contract wins for this vendor (values, buyers, notice URLs), cite that as
    **objective evidence** for the relevant criterion's score, carrying the caveat that awarded value is not
-   actual spend (it evidences track record, not committed cost). Run `/arckit:competitors --supplier
+   actual spend (it evidences track record, not committed cost). Run `/arckit-competitors --supplier
    '<vendor>'` to generate it if absent.
 
 3. **Read existing scores** from `projects/{id}/vendors/scores.json` (if exists)
@@ -140,7 +140,7 @@ Show the scoring audit trail.
 If no recognised action, show usage:
 
 ```text
-Usage: /arckit:score <action> [options]
+Usage: /arckit-score <action> [options]
 
 Actions:
   vendor <name> --project=NNN   Score a vendor against evaluation criteria
@@ -148,9 +148,9 @@ Actions:
   audit --project=NNN           Scoring audit trail
 
 Examples:
-  /arckit:score vendor "Acme Cloud" --project=001
-  /arckit:score compare --project=001
-  /arckit:score audit --project=001
+  /arckit-score vendor "Acme Cloud" --project=001
+  /arckit-score compare --project=001
+  /arckit-score audit --project=001
 ```
 
 ## Important Notes

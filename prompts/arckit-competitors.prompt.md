@@ -22,9 +22,9 @@ against the JSON Schema, compute a set of deterministic derived fields
 (including the supplier-rivalry head-to-head), then dispatch the
 **`arckit-competitors-writer`** subagent to render the final artefact.
 
-This is the supplier-centric sibling of `/arckit:tenders`: it shares the same
+This is the supplier-centric sibling of `/arckit-tenders`: it shares the same
 reader (`arckit-tenders-reader`) and the same handoff schema
-(`tenders-handoff.schema.json`). Where `/arckit:tenders` frames the data as
+(`tenders-handoff.schema.json`). Where `/arckit-tenders` frames the data as
 market benchmarks and incumbency, this command frames it as **rival
 suppliers** — who you compete against, their awarded-value share, and a
 head-to-head against a focal supplier.
@@ -164,7 +164,7 @@ install is incomplete.
 
 1. Dispatch the reader using the `Agent` tool with
    `subagent_type: "arckit-tenders-reader"` and the Step 2 scope JSON as the
-   prompt. (This is the **shared** reader — the same one `/arckit:tenders`
+   prompt. (This is the **shared** reader — the same one `/arckit-tenders`
    dispatches.)
 
 2. The reader's final-message string is a single JSON payload (no markdown,
@@ -321,7 +321,7 @@ carries three groups:
    `key_findings`, `citations`, `focal` (supplier-focus only),
    `head_to_head`, `rival_detail_narrative`.
 
-`classification` = `${user_config.default_classification}` if set, else
+`classification` = `${default_classification}` if set, else
 `OFFICIAL`. `date_iso` = today (ISO `YYYY-MM-DD`).
 
 ```json
@@ -375,7 +375,7 @@ Return ONLY a concise summary to the user:
 - `concentration_flag`.
 - Vendor profiles enriched (from the writer's return).
 - Data freshness — `data_current_as_of` if present, else "unavailable".
-- Next steps (`/arckit:research`, `/arckit:score`, `/arckit:risk`).
+- Next steps (`/arckit-research`, `/arckit-score`, `/arckit-risk`).
 
 ## Edge Cases
 
@@ -408,7 +408,7 @@ Return ONLY a concise summary to the user:
 - **Helpers** — `.arckit/scripts/validate-handoff.mjs` · `.arckit/scripts/bash/generate-document-id.sh`
 - **Subagents dispatched** — `arckit-tenders-reader` (shared reader: fetch + extract) · `arckit-competitors-writer` (final render + vendor-profile enrichment)
 - **External tools** — none directly (delegated to reader)
-- **Related commands** — `/arckit:research` (build-vs-buy with the competitive set) · `/arckit:score` (rival award history as Company Experience evidence) · `/arckit:risk` (supplier-concentration risk)
+- **Related commands** — `/arckit-research` (build-vs-buy with the competitive set) · `/arckit-score` (rival award history as Company Experience evidence) · `/arckit-risk` (supplier-concentration risk)
 
 ## Important Notes
 

@@ -94,7 +94,7 @@ scope:
 - `projects/000-global/ARC-000-PRIN-*.md` — Architecture principles, and
   the commissioning `buyer` (the department / body running the project).
 
-Unlike `/arckit:datascout`, requirements are **not** mandatory here. If
+Unlike `/arckit-datascout`, requirements are **not** mandatory here. If
 neither file is present, proceed using the explicit scope in `${input:topic:Enter project name or topic}`
 and say so in your first message (e.g. "No requirements found — scoping the
 market query from your arguments only").
@@ -275,7 +275,7 @@ three groups:
 3. **Derived fields** from Step 5 — `concentration_flag`, `source_health`,
    `incumbency_narrative`, `key_findings`, `citations`.
 
-`classification` = `${user_config.default_classification}` if set, else
+`classification` = `${default_classification}` if set, else
 `OFFICIAL`. `date_iso` = today (ISO `YYYY-MM-DD`).
 
 ```json
@@ -324,12 +324,12 @@ Return ONLY a concise summary to the user:
 - Top 3 suppliers with their share %.
 - `concentration_flag`.
 - Data freshness — `data_current_as_of` if present, else "unavailable".
-- Next steps (`/arckit:sobc`, `/arckit:risk`, `/arckit:research`).
+- Next steps (`/arckit-sobc`, `/arckit-risk`, `/arckit-research`).
 
 ## Edge Cases
 
 - **No requirements**: not a failure here. Proceed with the explicit
-  `${input:topic:Enter project name or topic}` scope and say so. (`/arckit:datascout` requires requirements;
+  `${input:topic:Enter project name or topic}` scope and say so. (`/arckit-datascout` requires requirements;
   this command does not.)
 - **Tenders endpoint down**: the reader returns `degraded_sources` and/or
   `errors`, omits `data_current_as_of`, and populates what it can. Still
@@ -350,7 +350,7 @@ Return ONLY a concise summary to the user:
 - **Helpers** — `.arckit/scripts/validate-handoff.mjs` · `.arckit/scripts/bash/generate-document-id.sh`
 - **Subagents dispatched** — `arckit-tenders-reader` (fetch + extract) · `arckit-tenders-writer` (final render)
 - **External tools** — none directly (delegated to reader)
-- **Related commands** — `/arckit:sobc` (downstream Economic Case) · `/arckit:risk` (downstream concentration risk) · `/arckit:research` (build-vs-buy context)
+- **Related commands** — `/arckit-sobc` (downstream Economic Case) · `/arckit-risk` (downstream concentration risk) · `/arckit-research` (build-vs-buy context)
 
 ## Important Notes
 

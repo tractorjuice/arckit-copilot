@@ -65,7 +65,7 @@ SOCI is a cross-sector Australian critical-infrastructure regime, not an energy-
 
    - **SOCI Applicability Assessment** - assess sector, asset class, thresholds, responsible entity obligations, register obligations, incident reporting, government assistance implications, and any uncertainty requiring legal confirmation.
 
-   - **ArcKit Architecture and Data Evidence Map** - cross-reference `/arckit:diagram`, `/arckit:dfd`, and `/arckit:data-model` artefacts to asset scope, protected-information handling, operational dependencies, and hazard evidence. Call out missing or stale evidence explicitly.
+   - **ArcKit Architecture and Data Evidence Map** - cross-reference `/arckit-diagram`, `/arckit-dfd`, and `/arckit-data-model` artefacts to asset scope, protected-information handling, operational dependencies, and hazard evidence. Call out missing or stale evidence explicitly.
 
    - **CIRMP Governance Model** - document accountable owner, board/council/governing body oversight, annual report owner, risk committee, review cadence, and evidence repository.
 
@@ -79,7 +79,7 @@ SOCI is a cross-sector Australian critical-infrastructure regime, not an energy-
 
    - **Annual Report and Attestation Readiness** - assess whether the entity can produce the annual CIRMP report within required timeframes, with board/council/governing body approval.
 
-   - **Operations, CMDB, and Traceability Integration** - map critical components and support processes to `/arckit:servicenow` CMDB CIs; map obligations and material risks to `/arckit:risk`, `/arckit:traceability`, `/arckit:graph-report`, and `/arckit:maturity-model` outputs.
+   - **Operations, CMDB, and Traceability Integration** - map critical components and support processes to `/arckit-servicenow` CMDB CIs; map obligations and material risks to `/arckit-risk`, `/arckit-traceability`, `/arckit-graph-report`, and `/arckit-maturity-model` outputs.
 
    - **Cross-Sector vs Sector-Specific Obligations** - record general SOCI obligations here and explicitly defer sector-specific requirements such as AESCSF, AER ring-fencing, NER/NGR, or AEMO obligations to sector recipes.
 
@@ -98,7 +98,7 @@ SOCI is a cross-sector Australian critical-infrastructure regime, not an energy-
 - Treat ArcKit diagrams, DFDs, data models, ServiceNow/CMDB records, risk registers, traceability matrices, graph-report coverage, and maturity assessments as first-class evidence. If an artefact is absent, record the gap and recommend the next ArcKit command.
 - CIRMP obligations and rules are subject to amendments and may vary by asset class. Record the legislation and guidance version checked.
 - The annual report is a governance obligation, not only a cyber artefact. Board/council/governing body approval readiness must be assessed.
-- Where the asset includes OT, cross-reference `/arckit:au-ot-security`; where it does not, mark OT evidence as not applicable rather than forcing it into scope.
+- Where the asset includes OT, cross-reference `/arckit-au-ot-security`; where it does not, mark OT evidence as not applicable rather than forcing it into scope.
 
 ## Suggested Next Steps
 

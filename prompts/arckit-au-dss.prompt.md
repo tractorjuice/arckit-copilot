@@ -82,7 +82,7 @@ The Digital Transformation Agency (DTA) Digital Service Standard sets the mandat
 
    - **Assessment Readiness** — for services approaching Alpha/Beta/Live assessment, identify the top 3 risks to passing and recommended mitigations.
 
-   - **ArcKit Evidence Integration** — map `/arckit:diagram`, `/arckit:dfd`, `/arckit:data-model`, `/arckit:servicenow`, `/arckit:risk`, `/arckit:traceability`, `/arckit:graph-report`, and `/arckit:maturity-model` outputs to DSS criteria, evidence gaps, delivery risks, Live operations, and service maturity.
+   - **ArcKit Evidence Integration** — map `/arckit-diagram`, `/arckit-dfd`, `/arckit-data-model`, `/arckit-servicenow`, `/arckit-risk`, `/arckit-traceability`, `/arckit-graph-report`, and `/arckit-maturity-model` outputs to DSS criteria, evidence gaps, delivery risks, Live operations, and service maturity.
 
    - **Recommendations** — prioritised list of actions to improve compliance posture, grouped by criterion priority.
 
@@ -95,11 +95,11 @@ The Digital Transformation Agency (DTA) Digital Service Standard sets the mandat
 ## Important Notes
 
 - The DTA Digital Service Standard applies to **all new and redesigned Australian Government digital services**. Existing services may be assessed when undergoing significant change.
-- Criterion 5 (Make it secure) should cross-reference the ASD Essential Eight assessment (`/arckit:au-e8-posture`) if one exists.
-- Criterion 7 (Protect users' privacy) should cross-reference the Privacy Impact Assessment (`/arckit:au-pia`) if one exists.
+- Criterion 5 (Make it secure) should cross-reference the ASD Essential Eight assessment (`/arckit-au-e8-posture`) if one exists.
+- Criterion 7 (Protect users' privacy) should cross-reference the Privacy Impact Assessment (`/arckit-au-pia`) if one exists.
 - Criterion 9 (Make it accessible) requires WCAG 2.2 Level AA as the minimum standard for Australian Government services.
 - The Standard is assessed at Alpha, Beta, and Live phases — the depth of evidence expected increases at each gate.
-- This assessment is analogous to the UK GDS Service Standard assessment (`/arckit:service-assessment`) but uses Australian criteria and governance structures.
+- This assessment is analogous to the UK GDS Service Standard assessment (`/arckit-service-assessment`) but uses Australian criteria and governance structures.
 - Use embedded ArcKit artefacts as evidence: diagrams for service boundaries, DFDs for flows, data models for privacy and analytics, ServiceNow for Live operations, risk and traceability for remediation governance, graph-report for coverage, and maturity-model for uplift.
 
 ## Suggested Next Steps

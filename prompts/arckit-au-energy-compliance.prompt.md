@@ -61,13 +61,13 @@ Australian energy projects may need architecture evidence for **AER ring-fencing
 
    - **NER / NGR and AEMO Obligation Mapping** - map architecture-relevant NER, NGR, AEMO procedure, market interface, registration, dispatch, metering, settlement, and operational obligations at a high level for specialist confirmation.
 
-   - **Energy-Specific SOCI Interpretation** - cross-reference `/arckit:au-soci-cirmp` for critical-infrastructure applicability, protected information, reporting, CIRMP hazards, and SOCI incident escalation.
+   - **Energy-Specific SOCI Interpretation** - cross-reference `/arckit-au-soci-cirmp` for critical-infrastructure applicability, protected information, reporting, CIRMP hazards, and SOCI incident escalation.
 
    - **Market and System-Operator Interface Register** - identify AEMO portals, APIs, B2B / B2M, file transfers, telemetry, dispatch, outage, settlement, and operational interfaces.
 
    - **DER, Metering, Settlement, and Customer Data Implications** - assess DERMS, DOE, CSIP-AUS, meter data, NMI, billing, customer, settlement, and affiliate data handling.
 
-   - **Regulated Asset, Interface, and Data Inventory** - identify source-of-truth registers for regulated services, unregulated services, critical assets, CMDB CIs, AEMO interfaces, APIs, market files, telemetry links, vendor access paths, customer data, metering data, settlements, owners, criticality, and inventory gaps. Cross-reference `/arckit:servicenow`, `/arckit:data-model`, `/arckit:dfd`, `/arckit:diagram`, `/arckit:risk`, and `/arckit:traceability` where available.
+   - **Regulated Asset, Interface, and Data Inventory** - identify source-of-truth registers for regulated services, unregulated services, critical assets, CMDB CIs, AEMO interfaces, APIs, market files, telemetry links, vendor access paths, customer data, metering data, settlements, owners, criticality, and inventory gaps. Cross-reference `/arckit-servicenow`, `/arckit-data-model`, `/arckit-dfd`, `/arckit-diagram`, `/arckit-risk`, and `/arckit-traceability` where available.
 
    - **Architecture Evidence** - require ring-fencing boundary diagrams, regulated/unregulated data-flow maps, AEMO interface maps, SOCI incident escalation, and the energy data model.
 
@@ -75,7 +75,7 @@ Australian energy projects may need architecture evidence for **AER ring-fencing
 
    - **Energy Data Model Dependencies** - record regulated services, assets, customers, NMIs, meters, DER, settlements, outages, market transactions, telemetry, and operational data dependencies.
 
-   - **Diagram and Traceability Handoffs** - list required `/arckit:dfd`, `/arckit:diagram`, `/arckit:data-model`, and `/arckit:traceability` updates.
+   - **Diagram and Traceability Handoffs** - list required `/arckit-dfd`, `/arckit-diagram`, `/arckit-data-model`, and `/arckit-traceability` updates.
 
    - **Architecture Decision Seeds** - propose ADRs for ring-fencing boundaries, shared services, market interface design, DER integration, customer data sharing, and SOCI escalation choices.
 
@@ -93,8 +93,8 @@ Australian energy projects may need architecture evidence for **AER ring-fencing
 - AER ring-fencing, NER, NGR, AEMO procedures, SOCI obligations, and participant-specific obligations change over time. Record versions, dates checked, and unresolved assumptions.
 - If AEMO site resources are temporarily unavailable, record the access date and use the latest verified local or public copy available to the organisation.
 - Do not collapse regulated and unregulated data flows into a generic system diagram. Produce explicit boundary, interface, data-model, traceability, and ADR handoffs.
-- Use `/arckit:au-aescsf` for energy cyber maturity and `/arckit:au-ot-security` for OT-specific evidence where applicable.
-- Inventory-heavy findings should reuse existing ArcKit artefacts: `/arckit:data-model` for data catalogues, `/arckit:servicenow` for CMDB/service inventory, `/arckit:dfd` and `/arckit:diagram` for colour-coded visualisation, `/arckit:risk` for heat/scoring, and `/arckit:graph-report` for register coverage gaps.
+- Use `/arckit-au-aescsf` for energy cyber maturity and `/arckit-au-ot-security` for OT-specific evidence where applicable.
+- Inventory-heavy findings should reuse existing ArcKit artefacts: `/arckit-data-model` for data catalogues, `/arckit-servicenow` for CMDB/service inventory, `/arckit-dfd` and `/arckit-diagram` for colour-coded visualisation, `/arckit-risk` for heat/scoring, and `/arckit-graph-report` for register coverage gaps.
 
 ## Suggested Next Steps
 
