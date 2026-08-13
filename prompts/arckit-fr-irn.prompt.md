@@ -49,7 +49,7 @@ ${input:topic:Enter project name or topic}
 
 ### Step 1: Identify or Create Project
 
-Identify the target project from the hook context. If the project doesn't exist, create it via `create-project.sh --json`.
+Identify the target project from the hook context. If the project doesn't exist, create it via `create-project.sh --json --name "<project-name>"` — the `--name` is required, and without it the script exits 1 rather than returning a path.
 
 ### Step 2: Determine scope
 
@@ -77,7 +77,7 @@ If no artifacts exist, include all 5 layers and note that scope confirmation is 
 
 1. **Detect version**: Check for existing `ARC-{PROJECT_ID}-IRN-v*.md` files
 2. **Document ID**: `ARC-{PROJECT_ID}-IRN-v{VERSION}`
-3. **Classification**: OFFICIAL-SENSITIVE (dependency mapping reveals strategic vulnerabilities)
+3. **Classification**: Diffusion Restreinte (dependency mapping reveals strategic vulnerabilities)
 
 For each of the **8 IRN pillars**, create a structured section:
 
@@ -101,7 +101,7 @@ For each pillar × organisational layer in scope:
 
 5. **Gap Analysis**: Based on what is observable from existing artifacts (NOT from reproduced aDRI criteria), flag obvious dependency concentrations, single-vendor risks, or regulatory exposure as preliminary observations.
 
-Before writing, read `.arckit/references/quality-checklist.md` and verify all **Common Checks** pass.
+Before writing, read `.arckit/references/quality-checklist.md` and verify all **Common Checks** plus **IRN** per-type checks pass.
 
 Write to:
 
@@ -119,7 +119,7 @@ projects/{project_id}/ARC-{PROJECT_ID}-IRN-v{VERSION}.md
 📄 Document: projects/{project_id}/ARC-{PROJECT_ID}-IRN-v{VERSION}.md
 📋 Document ID: {document_id}
 📅 Assessment Date: {date}
-🔒 Classification: OFFICIAL-SENSITIVE
+🔒 Classification: Diffusion Restreinte
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 📊 Scope
@@ -166,7 +166,7 @@ Next steps:
 - ✅ Link to official aDRI evaluation grid clearly displayed
 - ✅ Licence incompatibility and living-repo rationale explained in document
 - ✅ Preliminary observations from artifacts noted (dependency concentrations, single vendors)
-- ✅ Classification: OFFICIAL-SENSITIVE
+- ✅ Classification: Diffusion Restreinte
 
 ## Example Usage
 
