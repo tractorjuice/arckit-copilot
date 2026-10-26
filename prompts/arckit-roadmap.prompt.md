@@ -107,7 +107,7 @@ Create a comprehensive multi-year architecture roadmap with the following sectio
 
 #### Document Control
 
-- Generate Document ID: `ARC-[PROJECT_ID]-ROAD-v1.0` (for filename: `ARC-{PROJECT_ID}-ROAD-v1.0.md`)
+- Generate Document ID: `ARC-[PROJECT_ID]-ROAD-v[VERSION]` (for filename: `ARC-{PROJECT_ID}-ROAD-v{VERSION}.md`)
 - Set owner, dates, financial years covered
 - Review cycle: Quarterly (default for roadmaps)
 
@@ -320,7 +320,7 @@ Before completing the document, populate ALL document control fields in the head
 *Auto-populated fields* (populate these automatically):
 
 - `[PROJECT_ID]` → Extract from project path (e.g., "001" from "projects/001-project-name")
-- `[VERSION]` → "1.0" (or increment if previous version exists)
+- `[VERSION]` → from `.arckit/references/version-detection.md`: "1.0" only when no earlier `ARC-{PROJECT_ID}-ROAD-v*.md` exists
 - `[DATE]` / `[YYYY-MM-DD]` → Current date in YYYY-MM-DD format
 - `[DOCUMENT_TYPE_NAME]` → "Strategic Architecture Roadmap"
 - `ARC-[PROJECT_ID]-ROAD-v[VERSION]` → Construct using format above
@@ -372,7 +372,7 @@ Before writing the file, read `.arckit/references/quality-checklist.md` and veri
 Create the file at:
 
 ```text
-projects/[PROJECT_ID]/ARC-{PROJECT_ID}-ROAD-v1.0.md
+projects/[PROJECT_ID]/ARC-{PROJECT_ID}-ROAD-v{VERSION}.md
 ```
 
 Use the Write tool with the complete roadmap content following the template structure.
@@ -384,8 +384,8 @@ After writing the file, show a concise summary (NOT the full document):
 ```markdown
 ## Strategic Architecture Roadmap Created
 
-**Document**: `projects/[PROJECT_ID]/ARC-{PROJECT_ID}-ROAD-v1.0.md`
-**Document ID**: ARC-[PROJECT_ID]-ROAD-v1.0
+**Document**: `projects/[PROJECT_ID]/ARC-{PROJECT_ID}-ROAD-v{VERSION}.md`
+**Document ID**: ARC-[PROJECT_ID]-ROAD-v[VERSION]
 
 ### Roadmap Overview
 - **Timeline**: FY [START_YEAR] - FY [END_YEAR] ([N] years)
@@ -441,7 +441,7 @@ After writing the file, show a concise summary (NOT the full document):
 - Delivers [N] strategic capabilities
 - Mitigates [N] strategic risks
 
-**File location**: `projects/[PROJECT_ID]/ARC-{PROJECT_ID}-ROAD-v1.0.md`
+**File location**: `projects/[PROJECT_ID]/ARC-{PROJECT_ID}-ROAD-v{VERSION}.md`
 ```
 
 ## Important Notes
