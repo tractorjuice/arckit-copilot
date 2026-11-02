@@ -18,7 +18,7 @@ ${input:topic:Enter project name or topic}
 
 ### MANDATORY (warn if missing)
 
-- **APP** (Application Portfolio) — Extract: Application inventory, current state, capabilities served, technology stack, lifecycle status, business criticality, cost data, vendor dependencies
+- **APP** (Application Inventory) — Extract: Application inventory, current state, capabilities served, technology stack, lifecycle status, business criticality, cost data, vendor dependencies
   - If missing: STOP and ask user to run `/arckit-application-inventory` (or equivalent APP command) first. Rationalisation requires an existing application inventory.
 
 ### RECOMMENDED (read if available, note if missing)
@@ -278,7 +278,7 @@ After writing the file, show a concise summary (NOT the full document):
 - **Wave 2**: [Foundation] — [Start date] to [End date]
 
 ### Synthesised From
-- ✅ Application Portfolio: ARC-{P}-APP-v[N].md
+- ✅ Application Inventory: ARC-{P}-APP-v[N].md
 - [✅/⚠️] Business Capability Model: ARC-{P}-BPCM-v[N].md
 - [✅/⚠️] Architecture Decisions: ARC-{P}-ADR-*.md
 
